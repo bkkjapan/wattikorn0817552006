@@ -2,14 +2,17 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangkok-Japan Engineering Co.,Ltd.</title>
     <meta name="description" content="บริษัท กรุงเทพ-เจแปน เอ็นจิเนียริ่ง จำกัด จำหน่ายเครื่องจักร ชิ้นส่วน อะไหล่ และอุปกรณ์โรงงาน">
     <meta name="keywords" content="เครื่องจักร, ชิ้นส่วน, อะไหล่, อุปกรณ์โรงงาน, ซื้อขาย, อุตสาหกรรม">
     <meta name="author" content="Bangkok-Japan Engineering Co.,Ltd.">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Sarabun', Arial, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: auto;
@@ -21,23 +24,44 @@
             color: white;
             padding: 15px;
             font-size: 24px;
+            border-radius: 8px;
         }
         section {
             margin-top: 20px;
             text-align: left;
+            padding: 20px;
         }
         footer {
             margin-top: 20px;
             padding: 10px;
             background: #f4f4f4;
+            border-radius: 8px;
         }
         a {
             color: #0073e6;
             text-decoration: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
         img {
             max-width: 100%;
             height: auto;
+            margin: 10px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -49,24 +73,34 @@
     <section>
         <h2>เกี่ยวกับเรา</h2>
         <p>บริษัท กรุงเทพ-เจแปน เอ็นจิเนียริ่ง จำกัด เป็นผู้จัดหาและจำหน่ายเครื่องจักร ชิ้นส่วน อะไหล่ และอุปกรณ์โรงงานสำหรับอุตสาหกรรม</p>
-        <h2>ติดต่อเรา</h2>
-        <p>กรุณาส่ง INQUIRY ของท่านพร้อมรายละเอียดสินค้าเครื่องจักร ชิ้นส่วน อะไหล่ เครื่องมือและอุปกรณ์ที่ท่านต้องการ</p>
-        <p>Email: <a href="mailto:bkkjapan.engineering@gmail.com">bkkjapan.engineering@gmail.com</a></p>
-        <p>ติดต่อ คุณวัทธิกร / ฝ่ายขายโรงงานอุตสาหกรรม</p>
-        <p>เบอร์มือถือ: 081-755-2006 หรือ 082-440-2506</p>
-        <p><a href="http://bangkok-japan-engineering.blogspot.com/" target="_blank">เยี่ยมชมบล็อกของเรา</a></p>
+        
+        <div class="contact-info">
+            <h2>ติดต่อเรา</h2>
+            <p>กรุณาส่ง INQUIRY ของท่านพร้อมรายละเอียดสินค้าเครื่องจักร ชิ้นส่วน อะไหล่ เครื่องมือและอุปกรณ์ที่ท่านต้องการ</p>
+            <p>Email: <a href="mailto:bkkjapan.engineering@gmail.com">bkkjapan.engineering@gmail.com</a></p>
+            <p>ติดต่อ คุณวัทธิกร / ฝ่ายขายโรงงานอุตสาหกรรม</p>
+            <p>เบอร์มือถือ: <a href="tel:0817552006">081-755-2006</a> หรือ <a href="tel:0824402506">082-440-2506</a></p>
+            <p><a href="http://bangkok-japan-engineering.blogspot.com/" target="_blank">เยี่ยมชมบล็อกของเรา</a></p>
+        </div>
         
         <h2>แกลเลอรี่</h2>
-        <img src="BJ-1.jpg" alt="เครื่องจักร 1">
-        <img src="BJ-2.jpg" alt="เครื่องจักร 2">
-        <img src="Namecard.jpg" alt="นามบัตร">
-        <img src="Edit1.jpg" alt="รูป Edit 1">
-        <img src="Edit2.jpg" alt="รูป Edit 2">
-        <img src="Edit3.jpg" alt="รูป Edit 3">
-        <img src="Edit4.jpg" alt="รูป Edit 4">
+        <div class="gallery">
+            <img src="BJ-1.jpg" alt="เครื่องจักร 1">
+            <img src="BJ-2.jpg" alt="เครื่องจักร 2">
+            <img src="Namecard.jpg" alt="นามบัตร">
+            <img src="Edit1.jpg" alt="รูป Edit 1">
+            <img src="Edit2.jpg" alt="รูป Edit 2">
+            <img src="Edit3.jpg" alt="รูป Edit 3">
+            <img src="Edit4.jpg" alt="รูป Edit 4">
+        </div>
         
         <h2>ไฟล์นำเสนอ</h2>
-        <iframe src="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/embed?start=false&loop=false&delayms=3000" width="600" height="400" frameborder="0" allowfullscreen></iframe>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe src="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/embed?start=false&loop=false&delayms=3000" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+        </div>
         <p><a href="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/export/pptx" download>ดาวน์โหลดไฟล์ PowerPoint</a></p>
     </section>
     <footer>
