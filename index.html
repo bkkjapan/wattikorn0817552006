@@ -96,51 +96,39 @@
             border-radius: 6px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        <h3>🏭 แบรนด์และผู้ผลิตที่จำหน่าย</h3>
-            <div class="product-list">
-                <div class="product-item">
-                    <h4>มอเตอร์และอินเวอร์เตอร์</h4>
-                    <p>- MITSUBISHI ELECTRIC</p>
-                    <p>- PANASONIC</p>
-                    <p>- TOSHIBA</p>
-                    <p>- FUJI ELECTRIC</p>
-                    <p>- HITACHI</p>
-                    <p>- OMRON</p>
-                    <p>- YASKAWA</p>
-                    <p>- ABB</p>
-                    <p>- SIEMENS</p>
-                </div>
-                <div class="product-item">
-                    <h4>เกียร์และระบบส่งกำลัง</h4>
-                    <p>- SUMITOMO</p>
-                    <p>- NISSEI</p>
-                    <p>- TSUBAKI</p>
-                    <p>- NACHI</p>
-                    <p>- NSK</p>
-                    <p>- NTN</p>
-                    <p>- KOYO</p>
-                </div>
-                <div class="product-item">
-                    <h4>ปั๊มและระบบไฮดรอลิก</h4>
-                    <p>- EBARA</p>
-                    <p>- GRUNDFOS</p>
-                    <p>- KSB</p>
-                    <p>- REXROTH</p>
-                    <p>- YUKEN</p>
-                    <p>- NACHI</p>
-                    <p>- DAIKIN</p>
-                </div>
-                <div class="product-item">
-                    <h4>อุปกรณ์ควบคุมและเซนเซอร์</h4>
-                    <p>- KEYENCE</p>
-                    <p>- OMRON</p>
-                    <p>- MITSUBISHI</p>
-                    <p>- BALLUFF</p>
-                    <p>- SICK</p>
-                    <p>- PEPPERL+FUCHS</p>
-                </div>
-            </div>
-
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .brand-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .brand-category h4 {
+            color: #0073e6;
+            border-bottom: 1px solid #0073e6;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .brand-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .brand-list li {
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+        }
+        .brand-list li:before {
+            content: "•";
+            color: #0073e6;
+            margin-right: 8px;
+        }
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -263,6 +251,120 @@
                 </div>
             </div>
         </div>
+
+        <section class="brands">
+            <h2>แบรนด์และผู้ผลิตที่เราจำหน่าย</h2>
+            
+            <div class="brand-grid">
+                <div class="brand-category">
+                    <h4>🔌 มอเตอร์และอินเวอร์เตอร์</h4>
+                    <ul class="brand-list">
+                        <li>MITSUBISHI ELECTRIC</li>
+                        <li>TOSHIBA</li>
+                        <li>HITACHI</li>
+                        <li>YASKAWA</li>
+                        <li>FUJI ELECTRIC</li>
+                        <li>PANASONIC</li>
+                        <li>ABB</li>
+                        <li>SIEMENS</li>
+                        <li>OMRON</li>
+                        <li>SCHNEIDER</li>
+                        <li>DELTA</li>
+                        <li>LS ELECTRIC</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4>⚙️ เกียร์และระบบส่งกำลัง</h4>
+                    <ul class="brand-list">
+                        <li>SUMITOMO DRIVE</li>
+                        <li>NISSEI</li>
+                        <li>TSUBAKI</li>
+                        <li>MITSUBOSHI</li>
+                        <li>BANDO</li>
+                        <li>NSK</li>
+                        <li>NTN</li>
+                        <li>KOYO</li>
+                        <li>NACHI</li>
+                        <li>IKO</li>
+                        <li>THK</li>
+                        <li>DODGE</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4>💧 ปั๊มและระบบไฮดรอลิก</h4>
+                    <ul class="brand-list">
+                        <li>EBARA</li>
+                        <li>GRUNDFOS</li>
+                        <li>KSB</li>
+                        <li>TSURUMI</li>
+                        <li>BOSCH REXROTH</li>
+                        <li>YUKEN</li>
+                        <li>NACHI</li>
+                        <li>DAIKIN</li>
+                        <li>PARKER</li>
+                        <li>SMC</li>
+                        <li>CKD</li>
+                        <li>FESTO</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4>🔧 อุปกรณ์ควบคุมและเซนเซอร์</h4>
+                    <ul class="brand-list">
+                        <li>KEYENCE</li>
+                        <li>OMRON</li>
+                        <li>MITSUBISHI</li>
+                        <li>BALLUFF</li>
+                        <li>SICK</li>
+                        <li>PEPPERL+FUCHS</li>
+                        <li>IFM</li>
+                        <li>TURCK</li>
+                        <li>BANNER</li>
+                        <li>AUTONICS</li>
+                        <li>OPTEX FA</li>
+                        <li>PANASONIC</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4>🛠️ อุปกรณ์นิวเมติกส์</h4>
+                    <ul class="brand-list">
+                        <li>SMC</li>
+                        <li>FESTO</li>
+                        <li>CKD</li>
+                        <li>KOGANEI</li>
+                        <li>PARKER</li>
+                        <li>CAMOZZI</li>
+                        <li>AIRTAC</li>
+                        <li>TPC</li>
+                        <li>NORGREN</li>
+                        <li>MAC</li>
+                        <li>MINDMAN</li>
+                        <li>KURODA</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4>📊 ระบบวัดและควบคุม</h4>
+                    <ul class="brand-list">
+                        <li>YOKOGAWA</li>
+                        <li>ENDRESS+HAUSER</li>
+                        <li>HONEYWELL</li>
+                        <li>SIEMENS</li>
+                        <li>ABB</li>
+                        <li>EMERSON</li>
+                        <li>WIKA</li>
+                        <li>OMEGA</li>
+                        <li>BURKERT</li>
+                        <li>DWYER</li>
+                        <li>JUMO</li>
+                        <li>FUJI ELECTRIC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <div class="contact-info">
             <h2>ติดต่อเรา</h2>
