@@ -27,12 +27,45 @@
             border-radius: 8px;
         }
         .logo {
-            width: 350px; /* เพิ่มขนาดจาก 200px เป็น 350px */
+            width: 350px;
             margin-bottom: 15px;
             transition: transform 0.3s ease;
         }
         .logo:hover {
             transform: scale(1.05);
+        }
+        .namecard {
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .contact-button {
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s ease;
+        }
+        .contact-button:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        .phone-button {
+            background-color: #dc3545;
+        }
+        .line-button {
+            background-color: #00b900;
         }
         section {
             margin-top: 20px;
@@ -78,6 +111,18 @@
         <img src="logo.png" alt="BJ Engineering Logo" class="logo">
         <h1>Bangkok-Japan Engineering Co.,Ltd.</h1>
     </header>
+
+    <img src="Namecard.jpg" alt="นามบัตร" class="namecard">
+    
+    <div class="contact-buttons">
+        <a href="tel:0817552006" class="contact-button phone-button">
+            📞 โทร 081-755-2006
+        </a>
+        <a href="https://line.me/ti/p/~wattikorn" class="contact-button line-button">
+            💬 Line: wattikorn
+        </a>
+    </div>
+
     <section>
         <h2>เกี่ยวกับเรา</h2>
         <p>บริษัท กรุงเทพ-เจแปน เอ็นจิเนียริ่ง จำกัด เป็นผู้จัดหาและจำหน่ายเครื่องจักร ชิ้นส่วน อะไหล่ และอุปกรณ์โรงงานสำหรับอุตสาหกรรม</p>
@@ -95,7 +140,6 @@
         <div class="gallery">
             <img src="BJ-1.jpg" alt="เครื่องจักร 1">
             <img src="BJ-2.jpg" alt="เครื่องจักร 2">
-            <img src="Namecard.jpg" alt="นามบัตร">
             <img src="Edit1.jpg" alt="รูป Edit 1">
             <img src="Edit2.jpg" alt="รูป Edit 2">
             <img src="Edit3.jpg" alt="รูป Edit 3">
@@ -109,7 +153,7 @@
                     frameborder="0" 
                     allowfullscreen></iframe>
         </div>
-        <p><a href="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/export/pptx" download>คลิกดูไฟล์นำเสนอบริษัท PowerPoint</a></p>
+        <p><a href="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/export/pptx" download>คลิกดูไฟล์นำเสนอบริษัทได้ที่นี่-PowerPoint</a></p>
     </section>
     <footer>
         &copy; 2024 Bangkok-Japan Engineering Co.,Ltd.
