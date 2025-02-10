@@ -150,10 +150,16 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
-            padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+}
         }
         .contact-info {
             background: #f8f9fa;
