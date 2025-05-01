@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok-Japan Engineering Co.,Ltd. - จำหน่ายเครื่องจักร อะไหล่ อุปกรณ์โรงงาน</title>
+    <meta name="description" content="บริษัท กรุงเทพ-เจแปน เอ็นจิเนียริ่ง จำกัด จำหน่ายเครื่องจักร มอเตอร์ อินเวอร์เตอร์ เกียร์ ปั๊ม อะไหล่และอุปกรณ์โรงงานอุตสาหกรรม">
+    <meta name="keywords" content="เครื่องจักร, มอเตอร์, อินเวอร์เตอร์, เกียร์, ปั๊ม, อะไหล่, อุปกรณ์โรงงาน, ซื้อขาย, อุตสาหกรรม, โรงงาน, machine, motor, inverter, gear, pump">
+    <meta name="author" content="Bangkok-Japan Engineering Co.,Ltd.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .logo {
+            width: 350px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .namecard {
+            width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .contact-button {
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s ease;
+        }
+        .contact-button:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        .phone-button {
+            background-color: #dc3545;
+        }
+        .line-button {
+            background-color: #00b900;
+        }
+        section {
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+        }
+        .products {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .products h3 {
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .product-item {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .brand-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .brand-category h4 {
+            color: #0073e6;
+            border-bottom: 1px solid #0073e6;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .brand-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .brand-list li {
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+        }
+        .brand-list li:before {
+            content: "•";
+            color: #0073e6;
+            margin-right: 8px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery img {
+            width: 100%; 
+            height: auto; 
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        /* Language Switcher Styles */
+        .language-switcher {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+        }
+        .language-btn {
+            padding: 5px 10px;
+            background: white;
+            color: #0073e6;
+            border: 2px solid white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+        .language-btn:hover {
+            background: #f0f0f0;
+        }
+        .language-btn.active {
+            background: #0073e6;
+            color: white;
+            border-color: white;
+        }
+        
+        /* Language Content */
+        .lang-en {
+            display: none;
+        }
+        body.en .lang-en {
+            display: block;
+        }
+        body.en .lang-th {
+            display: none;
+        }
+    </style>
+</head>
+<body class="th">
+    <header>
+        <div class="language-switcher">
+            <button class="language-btn th-btn active" onclick="switchLanguage('th')">TH</button>
+            <button class="language-btn en-btn" onclick="switchLanguage('en')">EN</button>
+        </div>
+        <img src="logo.png" alt="BJ Engineering Logo" class="logo">
+        <h1 class="lang-th">Bangkok-Japan Engineering Co.,Ltd.</h1>
+        <h1 class="lang-en">Bangkok-Japan Engineering Co.,Ltd.</h1>
+    </header>
+
+    <img src="Namecard.jpg" alt="Business Card" class="namecard">
+    
+    <div class="contact-buttons">
+        <a href="tel:0817552006" class="contact-button phone-button">
+            <span class="lang-th">📞 โทร 081-755-2006</span>
+            <span class="lang-en">📞 Call 081-755-2006</span>
+        </a>
+        <a href="https://line.me/ti/p/~wattikorn" class="contact-button line-button">
+            <span class="lang-th">💬 Line: wattikorn</span>
+            <span class="lang-en">💬 Line: wattikorn</span>
+        </a>
+    </div>
+
+    <section>
+        <h2 class="lang-th">เกี่ยวกับเรา</h2>
+        <h2 class="lang-en">About Us</h2>
+        <p class="lang-th">บริษัท กรุงเทพ-เจแปน เอ็นจิเนียริ่ง จำกัด เป็นผู้จัดหาและจำหน่ายเครื่องจักร ชิ้นส่วน อะไหล่ และอุปกรณ์โรงงานสำหรับอุตสาหกรรม</p>
+        <p class="lang-en">Bangkok-Japan Engineering Co., Ltd. is a supplier and distributor of machinery, parts, spare parts, and factory equipment for industrial applications.</p>
+        
+        <div class="products">
+            <h2 class="lang-th">สินค้าเกี่ยวกับโรงงานทุกอย่างและงานบริการงานโรงงานโดยทีมงานมืออาชีพ</h2>
+            <h2 class="lang-en">All Factory Products and Professional Factory Services</h2>
+            
+            <h3 class="lang-th">🔧 มอเตอร์และอินเวอร์เตอร์</h3>
+            <h3 class="lang-en">🔧 Motors and Inverters</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <h4 class="lang-th">มอเตอร์ไฟฟ้า (Electric Motors)</h4>
+                    <h4 class="lang-en">Electric Motors</h4>
+                    <p>- AC/DC Motors</p>
+                    <p>- Servo Motors</p>
+                    <p>- Geared Motors</p>
+                </div>
+                <div class="product-item">
+                    <h4 class="lang-th">อินเวอร์เตอร์ (Inverters)</h4>
+                    <h4 class="lang-en">Inverters</h4>
+                    <p>- Variable Speed Drives</p>
+                    <p>- Frequency Inverters</p>
+                    <p>- Motor Controllers</p>
+                </div>
+            </div>
+
+            <h3 class="lang-th">⚙️ เกียร์และระบบส่งกำลัง</h3>
+            <h3 class="lang-en">⚙️ Gears and Power Transmission Systems</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <h4 class="lang-th">เกียร์ทด (Gear Reducers)</h4>
+                    <h4 class="lang-en">Gear Reducers</h4>
+                    <p>- Worm Gears</p>
+                    <p>- Helical Gears</p>
+                    <p>- Planetary Gears</p>
+                </div>
+                <div class="product-item">
+                    <h4 class="lang-th">อุปกรณ์ส่งกำลัง</h4>
+                    <h4 class="lang-en">Power Transmission Equipment</h4>
+                    <p>- Couplings</p>
+                    <p>- Pulleys</p>
+                    <p>- Bearings</p>
+                </div>
+            </div>
+
+            <h3 class="lang-th">💧 ปั๊มและระบบไฮดรอลิก</h3>
+            <h3 class="lang-en">💧 Pumps and Hydraulic Systems</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <h4 class="lang-th">ปั๊มอุตสาหกรรม</h4>
+                    <h4 class="lang-en">Industrial Pumps</h4>
+                    <p>- Centrifugal Pumps</p>
+                    <p>- Gear Pumps</p>
+                    <p>- Hydraulic Pumps</p>
+                </div>
+                <div class="product-item">
+                    <h4 class="lang-th">ระบบไฮดรอลิก</h4>
+                    <h4 class="lang-en">Hydraulic Systems</h4>
+                    <p>- Hydraulic Motors</p>
+                    <p>- Cylinders</p>
+                    <p>- Valves</p>
+                </div>
+            </div>
+
+            <h3 class="lang-th">🔩 อะไหล่และอุปกรณ์</h3>
+            <h3 class="lang-en">🔩 Parts and Equipment</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <h4 class="lang-th">อะไหล่เครื่องจักร</h4>
+                    <h4 class="lang-en">Machine Parts</h4>
+                    <p>- Spare Parts</p>
+                    <p>- Maintenance Parts</p>
+                    <p>- Machine Components</p>
+                </div>
+                <div class="product-item">
+                    <h4 class="lang-th">อุปกรณ์โรงงาน</h4>
+                    <h4 class="lang-en">Factory Equipment</h4>
+                    <p>- Factory Equipment</p>
+                    <p>- Industrial Tools</p>
+                    <p>- Safety Equipment</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="brands">
+            <h2 class="lang-th">แบรนด์และผู้ผลิตที่เราจำหน่าย สอบถามได้ทุกแบรนด์ทุกผู้ผลิต เทียบสินค้าทดแทนให้ได้</h2>
+            <h2 class="lang-en">Brands and Manufacturers We Distribute - Inquire About Any Brand or Manufacturer, We Can Provide Alternative Product Comparisons</h2>
+            
+            <div class="brand-grid">
+                <div class="brand-category">
+                    <h4 class="lang-th">🔌 มอเตอร์และอินเวอร์เตอร์</h4>
+                    <h4 class="lang-en">🔌 Motors and Inverters</h4>
+                    <ul class="brand-list">
+                        <li>MITSUBISHI ELECTRIC</li>
+                        <li>TOSHIBA</li>
+                        <li>HITACHI</li>
+                        <li>YASKAWA</li>
+                        <li>FUJI ELECTRIC</li>
+                        <li>PANASONIC</li>
+                        <li>ABB</li>
+                        <li>SIEMENS</li>
+                        <li>OMRON</li>
+                        <li>SCHNEIDER</li>
+                        <li>DELTA</li>
+                        <li>LS ELECTRIC</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4 class="lang-th">⚙️ เกียร์และระบบส่งกำลัง</h4>
+                    <h4 class="lang-en">⚙️ Gears and Power Transmission</h4>
+                    <ul class="brand-list">
+                        <li>SUMITOMO DRIVE</li>
+                        <li>NISSEI</li>
+                        <li>TSUBAKI</li>
+                        <li>MITSUBOSHI</li>
+                        <li>BANDO</li>
+                        <li>NSK</li>
+                        <li>SKF</li>
+                        <li>NTN</li>
+                        <li>KOYO</li>
+                        <li>NACHI</li>
+                        <li>IKO</li>
+                        <li>THK</li>
+                        <li>NIPPON GEAR</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4 class="lang-th">💧 ปั๊มและระบบไฮดรอลิก</h4>
+                    <h4 class="lang-en">💧 Pumps and Hydraulic Systems</h4>
+                    <ul class="brand-list">
+                        <li>EBARA</li>
+                        <li>KRACHT</li>
+                        <li>GRUNDFOS</li>
+                        <li>KSB</li>
+                        <li>TSURUMI</li>
+                        <li>BOSCH REXROTH</li>
+                        <li>YUKEN</li>
+                        <li>NACHI</li>
+                        <li>DAIKIN</li>
+                        <li>PARKER</li>
+                        <li>SMC</li>
+                        <li>CKD</li>
+                        <li>FESTO</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4 class="lang-th">🔧 อุปกรณ์ควบคุมและเซนเซอร์</h4>
+                    <h4 class="lang-en">🔧 Control Equipment and Sensors</h4>
+                    <ul class="brand-list">
+                        <li>KEYENCE</li>
+                        <li>OMRON</li>
+                        <li>MITSUBISHI</li>
+                        <li>BALLUFF</li>
+                        <li>SICK</li>
+                        <li>PEPPERL+FUCHS</li>
+                        <li>IFM</li>
+                        <li>TURCK</li>
+                        <li>BANNER</li>
+                        <li>AUTONICS</li>
+                        <li>OPTEX FA</li>
+                        <li>PANASONIC</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4 class="lang-th">🛠️ อุปกรณ์นิวเมติกส์</h4>
+                    <h4 class="lang-en">🛠️ Pneumatic Equipment</h4>
+                    <ul class="brand-list">
+                        <li>SMC</li>
+                        <li>FESTO</li>
+                        <li>CKD</li>
+                        <li>KOGANEI</li>
+                        <li>PARKER</li>
+                        <li>CAMOZZI</li>
+                        <li>AIRTAC</li>
+                        <li>TPC</li>
+                        <li>NORGREN</li>
+                        <li>MAC</li>
+                        <li>MINDMAN</li>
+                        <li>KURODA</li>
+                    </ul>
+                </div>
+
+                <div class="brand-category">
+                    <h4 class="lang-th">📊 ระบบวัดและควบคุม</h4>
+                    <h4 class="lang-en">📊 Measurement and Control Systems</h4>
+                    <ul class="brand-list">
+                        <li>YOKOGAWA</li>
+                        <li>ENDRESS+HAUSER</li>
+                        <li>HONEYWELL</li>
+                        <li>SIEMENS</li>
+                        <li>ABB</li>
+                        <li>EMERSON</li>
+                        <li>WIKA</li>
+                        <li>OMEGA</li>
+                        <li>BURKERT</li>
+                        <li>DWYER</li>
+                        <li>JUMO</li>
+                        <li>FUJI ELECTRIC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-info">
+            <h2 class="lang-th">ติดต่อเรา</h2>
+            <h2 class="lang-en">Contact Us</h2>
+            <p class="lang-th">กรุณาส่ง INQUIRY ของท่านพร้อมรายละเอียดสินค้าเครื่องจักร ชิ้นส่วน อะไหล่ เครื่องมือและอุปกรณ์ หรือ งานบริการ SERVICE ที่ท่านต้องการ</p>
+            <p class="lang-en">Please send your INQUIRY with details of the machinery, parts, spare parts, tools and equipment, or SERVICE work you require.</p>
+            <p class="lang-th">Email: <a href="mailto:bkkjapan.engineering@gmail.com">bkkjapan.engineering@gmail.com</a></p>
+            <p class="lang-en">Email: <a href="mailto:bkkjapan.engineering@gmail.com">bkkjapan.engineering@gmail.com</a></p>
+            <p class="lang-th">ติดต่อ คุณวัทธิกร / ฝ่ายขายโรงงานอุตสาหกรรม</p>
+            <p class="lang-en">Contact Mr. Wattikorn / Industrial Sales Department</p>
+            <p class="lang-th">เบอร์มือถือ: <a href="tel:0817552006">081-755-2006</a> หรือ <a href="tel:0824402506">082-440-2506</a></p>
+            <p class="lang-en">Mobile: <a href="tel:0817552006">081-755-2006</a> or <a href="tel:0824402506">082-440-2506</a></p>
+            <p class="lang-th"><a href="http://bangkok-japan-engineering.blogspot.com/" target="_blank">เยี่ยมชมบล็อกของเรา</a></p>
+            <p class="lang-en"><a href="http://bangkok-japan-engineering.blogspot.com/" target="_blank">Visit our blog</a></p>
+        </div>
+        
+        <h2 class="lang-th">แกลเลอรี่</h2>
+        <h2 class="lang-en">Gallery</h2>
+        <div class="gallery">
+            <img src="BJ-1.jpg" alt="Machine 1">
+            <img src="BJ-2.jpg" alt="Machine 2">
+            <img src="Edit1.jpg" alt="Edit 1">
+            <img src="Edit2.jpg" alt="Edit 2">
+            <img src="Edit3.jpg" alt="Edit 3">
+            <img src="Edit4.jpg" alt="Edit 4">
+        </div>
+        
+        <h2 class="lang-th">ไฟล์นำเสนอ คลิกที่ > ไปเรื่อยๆ นะครับ</h2>
+        <h2 class="lang-en">Presentation File - Click > to continue</h2>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe src="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/embed?start=false&loop=false&delayms=3000" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+        </div>
+        <p class="lang-th"><a href="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/export/pptx" download>ดาวน์โหลดไฟล์นำเสนอบริษัทได้ที่นี่-PowerPoint</a></p>
+        <p class="lang-en"><a href="https://docs.google.com/presentation/d/0BwpwI3Wn1FxoLTdyR21HXzd0ems/export/pptx" download>Download Company Presentation Here - PowerPoint</a></p>
+    </section>
+    <footer>
+        <span class="lang-th">&copy; 2024 Bangkok-Japan Engineering Co.,Ltd.</span>
+        <span class="lang-en">&copy; 2024 Bangkok-Japan Engineering Co.,Ltd.</span>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update body class
+            document.body.className = lang;
+            
+            // Update active button
+            const thBtn = document.querySelector('.th-btn');
+            const enBtn = document.querySelector('.en-btn');
+            
+            if (lang === 'th') {
+                thBtn.classList.add('active');
+                enBtn.classList.remove('active');
+            } else {
+                thBtn.classList.remove('active');
+                enBtn.classList.add('active');
+            }
+            
+            // ไม่ใช้ localStorage เพื่อหลีกเลี่ยงข้อผิดพลาด
+        }
+    </script>
+</body>
+</html>
